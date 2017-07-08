@@ -1,0 +1,16 @@
+BUGS AND PROBLEMS
+PIC N PLACE REV 3.5
+-----------------
+
+* ONLY THING CHANGED SINCE LAST GOOD RUN:
+in TMR0_interrupt(), 2 lines were added
+couple comments in usb.c, usb.h removed
+the #include "gcode.h" in usb.h removed
+writeUSBstring changed to const char *
+
+
+* Does the timer0 interrupt still break the code? Just added a line to clear the TMR0IF flag (sunday night)
+but the interrupt is still disabled. need to try this.
+* Check if the timing is actually correct
+* Add the function specs/descriptions from PICnplace4.X
+* Change the setupUSB() func so that it returns 1 if it worked, 0 if failed

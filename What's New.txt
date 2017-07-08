@@ -1,0 +1,16 @@
+WHAT'S NEW
+-----------
+
+Version 4.1 builds on ver 4.0 by adding:
+* rotation -- the rotational axis will remain enabled after use
+
+Version 4.4 incorporates limit switches!
+Note: G28 currently works. The PNP GUI does not allow the sending of parameters
+(i.e. G28 X) and will not send them, as indicated by the breakpoint in parseGcode()
+not stopping the execution
+Also, configuration parameters moved to params.h
+Removed TX/RX pin definitions
+
+Version 4.5 skipped...
+
+Version 4.6 replaces REVB PCB pins with REVC pinout
